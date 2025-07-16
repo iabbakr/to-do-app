@@ -3,9 +3,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
+    padding-bottom: 20px;;
     width: 100%;
-    height: 100vh;
-    background-color: grey;
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     
 }
 .todo-input {
@@ -15,6 +19,7 @@
     justify-content: space-between;
     background-color: white;
     padding: 10px 10px;
+    
 }
 
 .todo-text {
@@ -38,9 +43,13 @@
     margin: 8px 2px;
     cursor: pointer;
     border-radius: 4px;
-    width: 20%;
-    height: auto;
+    width: auto;
+    
 }
+.todo-btn:hover {
+    background-color: #45a; /* Darker green on hover */
+}
+
 
 .todo-list {
     display: flex;
@@ -53,6 +62,10 @@
     background-color: white;
     padding: 10px 10px;
     gap: 10px;
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .todo-items {
@@ -72,7 +85,7 @@
     align-items: center;
 }
 .del-btn {
-    background-color: red;
+    background-color: #45a;
     color: white;
     padding: 10px 10px;
     text-align: center;
@@ -83,11 +96,15 @@
     cursor: pointer;
     border-radius: 4px;
     width: auto;
-    border: 1px solid red;
+    border: 1px solid;
 }
 
+.del-btn:hover {
+    background-color: darkred; /* Darker red on hover */
+}   
+
 .clear-btn {
-    background-color: red;
+    background-color:  #45a;
     color: white;
     padding: 10px 10px;
     text-align: center;
@@ -97,5 +114,9 @@
     margin: 8px 2px;
     cursor: pointer;
     border-radius: 4px;
-    width: 20%;
+    width: auto;
+}
+
+.clear-btn:hover {
+    background-color: red; /* Darker red on hover */
 }
